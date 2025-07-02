@@ -38,6 +38,13 @@ func (a *ActivityUnit) SuperiorUnit() *ActivityUnit {
 	return a.superiorUnit
 }
 
+/*
+// I don't know if I actually need this:
+func (a *ActivityUnit) Assignments() []*Assignment {
+	return a.assignments
+}
+*/
+
 func (a *ActivityUnit) Leader() (*Assignment, error) {
 	if len(a.assignments) > 0 {
 		return a.assignments[0], nil

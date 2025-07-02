@@ -1,0 +1,87 @@
+package plan
+
+import (
+	"strings"
+
+	"github.com/pkg/errors"
+)
+
+type PT int
+
+const (
+	STRATPLAN PT = iota
+	BPLAN
+	CONPLAN
+	OPLAN
+	OPORD
+	FRAGORD
+)
+
+func ParsePlanType(s string) (PT, error) {
+	switch strings.ToLower(s) {
+	case "strategic plan":
+		fallthrough
+	case "stratplan":
+		return STRATPLAN, nil
+	case "base plan":
+		fallthrough
+	case "bplan":
+		return BPLAN, nil
+	case "concept plan":
+		fallthrough
+	case "conplan":
+		return CONPLAN, nil
+	case "operation plan":
+		fallthrough
+	case "oplan":
+		return OPLAN, nil
+	case "operation order":
+		fallthrough
+	case "opord":
+		return OPORD, nil
+	case "fragmentary operation order":
+		fallthrough
+	case "fragord":
+		return FRAGORD, nil
+	}
+
+	return -1, errors.Errorf("unrecognized plan type: %s", s)
+}
+
+func (pt PT) String() string {
+	switch pt {
+	case STRATPLAN:
+		return "STRATPLAN"
+	case BPLAN:
+		return "BPLAN"
+	case CONPLAN:
+		return "CONPLAN"
+	case OPLAN:
+		return "OPLAN"
+	case OPORD:
+		return "OPORD"
+	case FRAGORD:
+		return "FRAGORD"
+	}
+
+	return ""
+}
+
+func (pt PT) FullName() string {
+	switch pt {
+	case STRATPLAN:
+		return "Strategic Plan"
+	case BPLAN:
+		return "Base Plan"
+	case CONPLAN:
+		return "Concept Plan"
+	case OPLAN:
+		return "Operation Plan"
+	case OPORD:
+		return "Operation Order"
+	case FRAGORD:
+		return "Fragmentary Operation Order"
+	}
+
+	return ""
+}
