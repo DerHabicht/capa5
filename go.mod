@@ -7,4 +7,7 @@ require (
 	github.com/google/uuid v1.6.0
 )
 
-require github.com/pkg/errors v0.9.1
+require (
+	github.com/ag7if/go-files v0.7.0
+	github.com/pkg/errors v0.9.1
+)

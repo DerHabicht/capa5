@@ -1,5 +1,7 @@
 github.com/ag7if/cap v1.0.0 h1:UtlwDv5yQaIq0oUi1vybctOPND+P11/8m/J7bMt9Fjc=
 github.com/ag7if/cap v1.0.0/go.mod h1:2W/lnnOKkaHRomC865c///qz1fXPjBsXwed/BklW6xc=
+github.com/ag7if/go-files v0.7.0 h1:1q/KLFloGbeiXzsnnMZQrKPus8LLUNyCUv5kY4SZ518=
+github.com/ag7if/go-files v0.7.0/go.mod h1:AVnt2Fud3DO3w22grDSczDmWDVBmoobgAleaWsd/oms=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=

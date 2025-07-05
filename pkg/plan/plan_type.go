@@ -1,6 +1,7 @@
 package plan
 
 import (
+	"database/sql/driver"
 	"strings"
 
 	"github.com/pkg/errors"
@@ -17,7 +18,7 @@ const (
 	FRAGORD
 )
 
-func ParsePlanType(s string) (PT, error) {
+func ParsePT(s string) (PT, error) {
 	switch strings.ToLower(s) {
 	case "strategic plan":
 		fallthrough
@@ -84,4 +85,37 @@ func (pt PT) FullName() string {
 	}
 
 	return ""
+}
+
+func (pt PT) MarshalJSON() ([]byte, error) {
+	return []byte(pt.String()), nil
+}
+
+func (pt *PT) UnmarshalJSON(raw []byte) error {
+	val, err := ParsePT(string(raw))
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	pt = &val
+	return nil
+}
+
+func (pt PT) Value() (driver.Value, error) {
+	return []byte(pt.String()), nil
+}
+
+func (pt *PT) Scan(raw any) error {
+	s, ok := raw.(string)
+	if !ok {
+		return errors.Errorf("scanned value is not a string: %v", raw)
+	}
+
+	val, err := ParsePT(s)
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	pt = &val
+	return nil
 }
