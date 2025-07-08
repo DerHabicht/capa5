@@ -1,34 +1,41 @@
-package org
+package activity
 
 import (
 	"fmt"
 
-	"github.com/ag7if/cap"
+	"github.com/ag7if/cap/v2"
 )
 
 type Member struct {
-	capid     uint
-	grade     cap.Grade
-	lastName  string
-	firstName string
+	capid      uint
+	memberType cap.MemberType
+	grade      cap.Grade
+	lastName   string
+	firstName  string
 }
 
 func NewMember(
 	capid uint,
+	memberType cap.MemberType,
 	grade cap.Grade,
 	lastName string,
 	firstName string,
 ) Member {
 	return Member{
-		capid:     capid,
-		grade:     grade,
-		lastName:  lastName,
-		firstName: firstName,
+		capid:      capid,
+		memberType: memberType,
+		grade:      grade,
+		lastName:   lastName,
+		firstName:  firstName,
 	}
 }
 
 func (m Member) CAPID() uint {
 	return m.capid
+}
+
+func (m Member) MemberType() cap.MemberType {
+	return m.memberType
 }
 
 func (m Member) Grade() cap.Grade {

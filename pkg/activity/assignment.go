@@ -1,17 +1,17 @@
-package org
+package activity
 
 import (
-	"github.com/ag7if/cap"
+	"github.com/ag7if/cap/v2"
 	"github.com/google/uuid"
 )
 
 type Assignment struct {
-	id uuid.UUID
-	title string
+	id         uuid.UUID
+	title      string
 	memberType cap.MemberType
-	minGrade cap.Grade
-	maxGrade cap.Grade
-	assignee *Member
+	minGrade   cap.Grade
+	maxGrade   cap.Grade
+	assignee   *Member
 }
 
 func NewAssignment(
@@ -23,12 +23,12 @@ func NewAssignment(
 	assignee *Member,
 ) *Assignment {
 	return &Assignment{
-		id: id,
-		title: title,
+		id:         id,
+		title:      title,
 		memberType: memberType,
-		minGrade: minGrade,
-		maxGrade: maxGrade,
-		assignee: assignee,
+		minGrade:   minGrade,
+		maxGrade:   maxGrade,
+		assignee:   assignee,
 	}
 }
 
