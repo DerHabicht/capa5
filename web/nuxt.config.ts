@@ -37,10 +37,13 @@ export default defineNuxtConfig({
         preset: a5Preset,
         options: {
           darkModeSelector: 'system',
-          cssLayer: false,
+          cssLayer: {
+            name: 'primevue',
+            order: 'theme, base, primevue',
+          },
         },
       },
     },
   },
-//  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css'],
 })

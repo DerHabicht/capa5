@@ -1,10 +1,10 @@
 <template>
   <div class="font-body">
     <PageHeader/>
-    <div class="flex flex-row">
-      <div class="w-1/4"/>
-      <slot />
-      <div class="w-1/4"/>
+    <div class="grid grid-cols-6">
+      <div class="col-span-4 col-start-2">
+        <slot />
+      </div>
     </div>
   </div>
 </template>
