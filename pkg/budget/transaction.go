@@ -7,13 +7,13 @@ import (
 type Transaction struct {
 	id          uuid.UUID
 	description string
-	splits      []Split
+	splits      []Entry
 }
 
 func NewTransaction(
 	id uuid.UUID,
 	description string,
-	splits []Split,
+	splits []Entry,
 ) Transaction {
 	return Transaction{
 		id:          id,
@@ -30,6 +30,6 @@ func (t Transaction) Description() string {
 	return t.description
 }
 
-func (t Transaction) Splits() []Split {
+func (t Transaction) Splits() []Entry {
 	return t.splits
 }

@@ -6,10 +6,11 @@ import (
 )
 
 type Account struct {
-	id          uuid.UUID
-	accountType AT
-	code        uint64
-	name        string
+	id                 uuid.UUID
+	accountType        AT
+	code               uint64
+	name               string
+	transactionEntries []Entry
 }
 
 func NewAccount(
