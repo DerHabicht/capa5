@@ -2,11 +2,13 @@ package plan
 
 import (
 	"time"
+
+	"github.com/derhabicht/capa5/pkg/user"
 )
 
 type CoordinationAction struct {
-	To string
-	Action CA
+	To      *user.User
+	Action  CA
 	Outcome CO
-	Date time.Time
+	Date    time.Time
 }
