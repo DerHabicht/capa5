@@ -144,58 +144,6 @@ flowchart TD
     AAR --> CONPLAN
 ```
 
-## Domain Model
-
-```mermaid
-classDiagram
-    Plan <|-- BPlan
-    Plan <|-- ConPlan
-    Plan <|-- OPlan
-    BPlan *-- PlanSection
-    ConPlan *-- PlanSection
-    OPlan *-- PlanSection
-    BPlan -- ConPlan
-    ConPlan -- OPlan
-    PlanSection *-- ST
-
-    class Plan {
-        -planNumber: string
-        -title: string
-        -effective: time.Time
-        -sections: []PlanSection
-        -annexes: []PlanSection
-        Sections() []PlanSection
-        Annexes() []PlanSection
-    }
-
-    class BPlan {
-    }
-
-    class ConPlan {
-        -bplan: *BPlan
-        -location: string
-    }
-
-    class OPlan {
-        -conPlan: *ConPlan
-        -activity: *activity.Activity
-    }
-
-    class PlanSection {
-        -sectionType: ST
-        -title: string
-        -content: string
-        -subsections: []PlanSection
-    }
-
-    class ST {
-        MainSection
-        Annex
-    }
-
-    
-```
-
 ## Drafts, Collaboration, and Management of Change (MOC)
 
 The bigger and more complex an activity, the more people will be required to participate
