@@ -144,53 +144,43 @@ flowchart TD
     AAR --> CONPLAN
 ```
 
-## Drafts, Collaboration, and Management of Change (MOC)
+## Staff Coordination
 
-The bigger and more complex an activity, the more people will be required to participate
-in its planning. Staff collaboration is of particular import in CAP, since planners are
-volunteers and do not always have 40+ hours/week to commit to planning these activities.
-The planning module needs to support collaboration natively, but needs to do so in a way
-that is trackable and auditable.
+Large, complex activities&mdash;the kind that would benefit the most from a software
+suite like CAP/A5&mdash;cannot be planned by a single person. This is especially true
+in CAP, where activity planners are all volunteers. A staff needs to be assembled in
+advance to help the activity director build a useful OPLAN. This creates a new problem 
+however: coordinating the work amongst the staff.
 
-Ultimately, the responsibility to plan the activity lies with the Activity Director.
-Aspects of the plan should be parceled out to activity staff by the director to be
-drafted. Activity staff may choose to further delegate aspects of the plan and so forth.
-Under this schema, work conducted by activity planners will need to be approved by the
-individual who tasked them in the first place, creating a natural coordination chain.
+As with the planning process, the military has a pattern that can be adapted to inform
+the collaboration features of CAP/A5: the staff package.
 
-For coordinaton chains, the U.S. Military will use staff summary sheets. The Air Force's
-version of this is the AF 1768. CAPP 1-2 makes mention of an electronic Staff Summary
-Sheet (eSSS) that is taken from AFH 33-337 (which, in turn, is based heavily on the
-AF 1768). Each link in the coordination chain has four elements:
+### Staff Packages
 
-1. To (who needs to act on this)
-2. Action (what do they need to do)
-3. Outcome
-4. Date action was taken
+Staff packages consist of three main parts:
 
-The standard actions on an SSS are:
+1. A Staff Summary Sheet (SSS) which is used to identify and track what needs to be done
+to accomplish the tasks in the package,
 
-- Coordinate (material input is required from this individual)
-- Info (this is being passed on for information purposes only, no action required)
-- Sign (obvious)
-- Review (individual is asked to review and comment if needed, material input is not expected)
-- POC (used to tag an individual&mdash;other than the originator of the SSS&mdash; as the POC)
-- Log (rare, used in admin contexts for actions that need to be logged e.g. personnel authorizations.)
+2. One or more "tabs" or documents which will be the output of the coordination process, and
 
-Typically an SSS will be paired with a Comment Resolution Matrix (CRM) which is a 
-master list of comments made by the approval chain and what is being done about them.
+3. a Comment Resolution Matrix (CRM) to capture, track, and act upon comments made by staffers 
+while processing the package.
 
-The object we can use to tie plan content to coordination, comment resoluton, and
-verson control is a `Task`. `Task`s can be assigned down the chain of command, be
-correlated with specific `Section`s of a plan, and tie together comments and 
-resolutions. If designed properly, tasks can be granular to sections without causing 
-undue burden on users because of a databases's ability to collate and re-collate data
-based on context. A properly designed system can also catch dregs, making sure tasks
-don't fall through the cracks.
+### Staff Summary Sheet (SSS)
 
-There are two loops here: revision loops and comment loops. The revision loop refers
-to the document as a whole. The comment loops are granular, focusing on individual
-parts or sections of the plan. Several comments get rolled into a revision which
-becomes current once the big boss signs off on all the work that has been done. An
-iterative approach can be taken, chunking comment loops together into larger revision
-chunks.
+In the Air Force, the Staff Summary Sheet is the AF 1768 form. It is common to handle staff
+packages over email, and both DAFH 33-337 and CAPP 1-2 describe an electronic Staff Summary
+Sheet (eSSS) format for the body of such emails. In either form, the SSS has the same basic
+parts:
+
+1. A coordination chain identifying who needs to act on the package and (in broad terms) what
+action is required from them,
+
+2. Information regarding the Action Officer (AO) who is responsible for sheparding the 
+package and implementing the completed package, and
+
+3. A summary of the package's purpose and background along with a discussion including the
+views of others and a recommendation for action.
+
+## Putting It All Together: The CAP/A5 Planning Process

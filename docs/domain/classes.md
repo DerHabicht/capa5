@@ -19,10 +19,21 @@ classDiagram
 
     class plan {
         Plan
+        PT
+        RevisionHistory
+        Revision
+        Section
+    }
+
+    class task {
+        Task
+        CoordinationChain
+        Coordination
     }
 
     class user {
         User
+        Member
     }
 
 ```
@@ -33,6 +44,97 @@ classDiagram
 
 ## Budgeting Module
 
+## Coordination Module
+```mermaid
+classDiagram
+    StaffSummarySheet o-- Action
+    StaffSummarySheet o-- Tab
+    StaffSummarySheet o-- Comment
+    Action *-- CA
+    Action *-- CO
+    Tab o-- Task
+    Tab *-- Tabbable
+    Tab -- Comment
+    Task o-- Action
+    Task -- Comment
+    Comment *-- CT
+    Comment *-- CD
+
+    class StaffSummarySheet {
+        -actions: []Action
+        -actionOfficer: user.User
+        -plan: plan.Plan
+        -suspense: time.Time  
+        -summary: string
+        -tabs: []Tab
+        -crm: []Comment
+    }
+
+    class Action {
+        -to: user.User
+        -action: CA
+        -outcome: CO
+        -date: time.Time
+    }
+
+    class CA {
+	    ApproveAction
+	    CoordAction
+	    InfoAction
+	    SignAction
+	    ReviewAction
+	    POCAction
+	    LogAction
+    }
+
+    class CO {
+        ConcurOutcome
+        NonConcurOutcome
+        ApproveOutcome
+        DisapproveOutcome
+    }
+   
+    class Tab {
+        item: Tabbable
+    }
+
+    class Tabbable {
+        ID() uuid.UUID
+        TabType() string
+    }
+
+    class Task {
+        -actions: []Action
+    }
+
+    class Comment {
+        source: user.User
+        opr: user.User
+        ct: CT
+        tab: Tab
+        location: string
+        comment: string
+        cd: CD
+        rationale: string
+    }
+
+    class CT {
+        CriticalComment
+        MajorComment
+        SubstantiveComment
+        AdministrativeComment
+    }
+
+    class CD {
+        AcceptDecision
+        RejectDecision
+        ModifyDecision
+    }
+
+
+```
+
+
 ## Planning Module
 
 ```mermaid
@@ -41,14 +143,14 @@ classDiagram
     Plan *-- RevisionHistory
     RevisionHistory o-- Revision
     Revision *-- Section
-    Section *-- CoordinationChain
-    CoordinationChain o-- Coordination
 
     class Plan {
         -planNumber: string
         -planType: PT
         -parentPlan: *Plan
         -title: string
+        -owner: user.User
+        -editors: collections.Set[user.User]
         -revisionHistory: RevisionHistory
     }
 
@@ -72,6 +174,8 @@ classDiagram
 
     class Revision {
         -revisionNumber: int
+        -owner: user.User
+        -editors: collections.Set[user.User]
         -effective: *time.Time
         -revisionNotes: string
         -sections: []Section
@@ -89,37 +193,19 @@ classDiagram
 
     class Section {
         -title: string
-        -coordination: CoordinationChain
+        -owner: user.User
+        -editors: collections.Set[user.User]
         -content: string
         -subsections: []Section
         +Title() string
-        +CoordinationChain() CoordinationChain
         +Content() string
         +UpdateContent(content string) string, error
         +Subsections() []Section
         +AddSubsection(s Section, index int)
         +RemoveSubsection(index int)
     }
-
-    class CoordinationChain {
-        -approval: Coordination
-        -coordination: []Coordination
-        +CoordinationChain() []Coordination
-        +AddCoordination(c Coordination, index int)
-        +UpdateCoordination(u *user.User, co CO, t time.Time) error
-        +UpdateApproval(co CO, t time.Time)
-        +RemoveCoordination(index int)
-    }
-
-    class Coordination {
-        To: *user.User
-        Action: CA
-        Outcome: *CO
-        Date: *time.Time
-    }
-
-    
 ```
+
 
 ## User Module
 
