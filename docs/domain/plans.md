@@ -184,3 +184,5 @@ package and implementing the completed package, and
 views of others and a recommendation for action.
 
 ## Putting It All Together: The CAP/A5 Planning Process
+
+1. Idea for an activity, BPLAN draft is created.
