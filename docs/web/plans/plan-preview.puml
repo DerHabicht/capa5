@@ -43,7 +43,7 @@
         .
     }
 
-    {[<&chevron-left>] | [<&chevron-right>]} | {[Edit] | [New Task]}
+    {[<&chevron-left>] | [<&chevron-right>]} | [Edit] | [New Task]
 }
 
 }
