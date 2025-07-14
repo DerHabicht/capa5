@@ -1,19 +1,19 @@
 @startsalt Plans Index
 { 
-{+ https://capa5.ag7if.net/plans }
-{+
-{* [<&home>] | <b>Plans</b> | Activities | About | [<&moon>] | [<&person>] }
-
-<b><u>Plans</u></b>
-
-{
-    .      | Plan Type | Plan Number   | Plan Title                             | Revision Date
-    [Open] | BPLAN     | UTWG 1        | Desert Hawk Encampment                 | 31 Jul 2025
-    [Open] | CONPLAN   | UTWG 1-1      | Desert Hawk Encampment at Camp Wiliams | 31 Jul 2025
-    [Open] | CONPLAN   | UTWG 1-2      | Desert Hawk Encampment at Wendover JTF | 31 July 2025
-    [Open] | OPLAN     | UTWG 1-1-2026 | Desert Hawk XXIII                      | DRAFT
-}
-
-}
+    {+ https://capa5.ag7if.net/plans }
+    {+
+        {* [<&home>] | <b>Plans</b> | Activities | About | [<&moon>] | [<&person>] }
+        .
+        <b><u>Plans</u></b>
+        .
+        {
+            .      | Plan Type | Plan Number   | Plan Title                             | Revision Date
+            [Open] | BPLAN     | UTWG 1        | Desert Hawk Encampment                 | 31 Jul 2025
+            [Open] | CONPLAN   | UTWG 1-1      | Desert Hawk Encampment at Camp Wiliams | 31 Jul 2025
+            [Open] | CONPLAN   | UTWG 1-2      | Desert Hawk Encampment at Wendover JTF | 31 July 2025
+            [Open] | OPLAN     | UTWG 1-1-2026 | Desert Hawk XXIII                      | DRAFT
+        }
+        [New Plan]
+    }
 }
 @endsalt

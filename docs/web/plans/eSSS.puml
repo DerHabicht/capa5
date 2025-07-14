@@ -1,0 +1,71 @@
+@startsalt Plan: Plan Tab
+{ 
+{+ https://capa5.ag7if.net/plans/utwg-1-1-2026 }
+{+
+{* [<&home>] | <b>Plans</b> | Activities | About | [<&moon>] | [<&person>] }
+    ^DRAFT^
+{/ <b>eSSS</b> | Plan | CRM }
+{+
+    .
+    <b><u>Coordination</u></b>
+    .
+    {#
+        TO          | ACTION  | OUTCOME  | DATE
+        DHXXII/SE   | Coord   | Concur   | .
+        DHXXII/CC   | Coord   | .        | .
+        UTWG/CP     | Approve | ^      ^ | .
+    }
+    .
+    <b><u>Outstanding Tasks</u></b>
+    .
+    {#
+        Tasks                    | ASSIGNED      | SUSPENSE
+        Finalize Command Intent  | Maj Hawk      | 5 Aug 2025
+        Create more busywork     | Maj Hawk      | 1 Aug 2025
+        Fetch Coffee             | 1st Lt Weaver | 1 Jul 2025
+    }
+    {[New Task]}
+    .
+    <b><u>Summary</u></b>
+    .
+    {+
+        <u>PURPOSE</u>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis 
+        ligula sed tortor lobortis, vel convallis mi scelerisque. Nullam malesuada 
+        maximus turpis, nec congue orci viverra euismod. Cras aliquam fermentum 
+        dui eu feugiat. Donec a metus tristique, suscipit orci ut, lacinia erat. 
+        In mi lorem, hendrerit ac elit quis, consequat ornare diam. Interdum et 
+        malesuada fames ac ante ipsum primis in faucibus. Proin tempus, metus vel 
+        dapibus sodales, massa sem ultricies leo, nec congue tellus magna ut 
+        ligula. Phasellus tellus velit, dictum a lacus vel, suscipit semper elit. 
+        Nulla facilisi.
+        .
+        <u>BACKGROUND</u>
+        Fusce nec elementum dui. Fusce et condimentum purus. Sed consectetur leo
+        at urna varius, nec facilisis nisl lacinia. Aliquam in faucibus ante,
+        pellentesque porta nunc. Pellentesque dolor ante, mattis vitae faucibus
+        vel, posuere dictum lacus. Quisque semper faucibus lorem, tempor commodo
+        dui euismod sed. Vivamus ac felis vel ipsum ullamcorper tincidunt.
+        .
+        <u>DISCUSSION</u>
+        Aliquam dui nisl, rutrum vitae consectetur non, volutpat id nulla. Nulla
+        tincidunt sagittis nisi, in faucibus elit ultrices in. Interdum et
+        malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant 
+        morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+        Integer vehicula nunc ipsum, quis mollis nulla fermentum eu. Mauris eget
+        posuere ex, non viverra libero. Sed accumsan non turpis eu faucibus. Sed
+        luctus ante eget nisi porta, nec viverra ante ullamcorper.
+        .
+        <u>RECOMMENDATION</u>
+        Suspendisse potenti. Cras et sapien finibus, commodo massa quis, auctor
+        eros. Praesent nec efficitur urna, nec accumsan orci. Etiam at feugiat
+        velit, vel mattis nunc. Phasellus egestas condimentum volutpat. Morbi non
+        sodales nisi. Vestibulum elementum vehicula ante, et tempus turpis
+        tincidunt a.
+    }
+
+
+}
+}
+}
+@endsalt
