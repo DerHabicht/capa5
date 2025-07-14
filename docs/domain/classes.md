@@ -6,7 +6,9 @@ title: Package Hierarchy
 ---
 
 classDiagram
+    coordination ..> user
     plan ..> user
+    user ..> unit
 
     class activity {
     }
@@ -15,6 +17,10 @@ classDiagram
     }
 
     class budget {
+    }
+
+    class coordination {
+
     }
 
     class plan {
@@ -31,9 +37,15 @@ classDiagram
         Coordination
     }
 
+    class unit {
+        AB
+        DutyAssignment
+        Member
+        Unit
+    }
+
     class user {
         User
-        Member
     }
 
 ```
@@ -49,14 +61,12 @@ classDiagram
 classDiagram
     StaffSummarySheet o-- Action
     StaffSummarySheet o-- Tab
-    StaffSummarySheet o-- Comment
     Action *-- CA
     Action *-- CO
     Tab o-- Task
     Tab *-- Tabbable
-    Tab -- Comment
-    Task o-- Action
-    Task -- Comment
+    Tab o-- Comment
+    Task -- Action
     Comment *-- CT
     Comment *-- CD
 
@@ -203,6 +213,49 @@ classDiagram
         +Subsections() []Section
         +AddSubsection(s Section, index int)
         +RemoveSubsection(index int)
+    }
+```
+
+## Unit Module
+
+Age Brackets:
+
+- Adult: 21+
+- Early Adult: 18-20
+- Late Teen: 16-17
+- Mid Teen: 14-15
+- Early Teen: 12-13
+
+```mermaid
+classDiagram
+    class AB {
+        Adult
+        EarlyAdult
+        LateTeen
+        MidTeen
+        EarlyTeen
+    }
+
+    class DutyAssignment {
+        -id: uuid.UUID
+        -title: string
+        -officeSymbol: string
+        -unit: Unit
+        -assignee: *Member
+    }
+
+    class Member {
+        -capid: uint
+        -memberType: cap.MemberType
+        -grade: cap.Grade
+        -lastName: string
+        -firstName: string
+        -ageBracket: AB
+    }
+
+    class Unit {
+        -id: uuid.UUID
+        cap.Unit
     }
 ```
 

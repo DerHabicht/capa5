@@ -1,49 +1,51 @@
 @startsalt Plan: Plan Tab
 { 
-{+ https://capa5.ag7if.net/plans/utwg-1-1-2026 }
-{+
-{* [<&home>] | <b>Plans</b> | Activities | About | [<&moon>] | [<&person>] }
-^DRAFT^
-{/ eSSS | <b>Plan</b> | CRM }
-{+
-    {T
-    + 1: Situation
-    + 2: Mission
-    + 3: Execution
-    ++ 3.1: Concept of Operations
-    +++ 3.1.1: <b>Command Intent</b>
-    +++ 3.1.2: Phase I
-    +++ 3.1.3: Phase II
-    + 4: Sustainment 
-    + 5: Command and Control
-    + A: Task Organization
-    } | {
-        <b>3.1.1: Command Intent</b>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Nam dolor sapien, porttitor sed faucibus non, posuere id 
-        ante. Nam massa felis, porta non diam vel, malesuada 
-        vehicula libero. Pellentesque pharetra placerat odio, 
-        vehicula convallis purus. Mauris lorem felis, condimentum 
-        dignissim viverra vel, vulputate sit amet risus. Morbi
-        sollicitudin enim id convallis blandit. Donec arcu eros, 
-        accumsan at rutrum id, commodo eget eros. Maecenas egestas 
-        urna eget massa suscipit congue.
-    } | {+
-        <u>Tasks for 3.1.1: Command Intent</u>
-        <u>Task</u>             | <u>Suspense</u>
-        Finalize Command Intent | 5 Aug 2025
-        Generate more busywork  | 1 Aug 2025
+    {+ https://capa5.ag7if.net/plans/utwg-1-1-2026 }
+    {+
+        {* [<&home>] | <b>Plans</b> | Activities | About | [<&moon>] | [<&person>] }
         .
+        { ^DRAFT^ {<b>OPLAN UTWG 1-1-2026: Desert Hawk XXIII</b>}}
         .
-        .
-        .
-        .
-        .
+        {/ eSSS | <b>Plan</b> | CRM | Team }
+        {+
+            {T
+                + 1: Situation
+                + 2: Mission
+                + 3: Execution
+                ++ 3.1: Concept of Operations
+                +++ 3.1.1: <b>Command Intent</b>
+                +++ 3.1.2: Phase I
+                +++ 3.1.3: Phase II
+                + 4: Sustainment 
+                + 5: Command and Control
+                + A: Task Organization
+            } | {
+                <b>3.1.1: Command Intent</b>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nam dolor sapien, porttitor sed faucibus non, posuere id 
+                ante. Nam massa felis, porta non diam vel, malesuada 
+                vehicula libero. Pellentesque pharetra placerat odio, 
+                vehicula convallis purus. Mauris lorem felis, condimentum 
+                dignissim viverra vel, vulputate sit amet risus. Morbi
+                sollicitudin enim id convallis blandit. Donec arcu eros, 
+                accumsan at rutrum id, commodo eget eros. Maecenas egestas 
+                urna eget massa suscipit congue.
+            } | {
+                {#
+                    <b>Tasks</b> | * | *
+                    Finalize Command Intent | 5 Aug 2025 | [Complete]
+                    Generate more busywork  | 1 Aug 2025 | [Complete]
+                }
+                [New Task]
+                {#
+                    <b>Comments</b> | * | *
+                    S | Instructions unclear, sewed name tapes to blues | [Resolve]
+                }
+                [New Comment]
+            }
+
+            {[<&chevron-left>] | [<&chevron-right>] | [<&plus>] | [<&minus>] | [<&elevator>] } | [Edit] | .
+        }
     }
-
-    {[<&chevron-left>] | [<&chevron-right>]} | [Edit] | {[Show All] | [New Task]}
-}
-
-}
 }
 @endsalt

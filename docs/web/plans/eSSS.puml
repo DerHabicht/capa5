@@ -1,71 +1,86 @@
-@startsalt Plan: Plan Tab
+@startsalt Plan: eSSS Tab
 { 
-{+ https://capa5.ag7if.net/plans/utwg-1-1-2026 }
-{+
-{* [<&home>] | <b>Plans</b> | Activities | About | [<&moon>] | [<&person>] }
-    ^DRAFT^
-{/ <b>eSSS</b> | Plan | CRM }
-{+
-    .
-    <b><u>Coordination</u></b>
-    .
-    {#
-        TO          | ACTION  | OUTCOME  | DATE
-        DHXXII/SE   | Coord   | Concur   | .
-        DHXXII/CC   | Coord   | .        | .
-        UTWG/CP     | Approve | ^      ^ | .
-    }
-    .
-    <b><u>Outstanding Tasks</u></b>
-    .
-    {#
-        Tasks                    | ASSIGNED      | SUSPENSE
-        Finalize Command Intent  | Maj Hawk      | 5 Aug 2025
-        Create more busywork     | Maj Hawk      | 1 Aug 2025
-        Fetch Coffee             | 1st Lt Weaver | 1 Jul 2025
-    }
-    {[New Task]}
-    .
-    <b><u>Summary</u></b>
-    .
+    {+ https://capa5.ag7if.net/plans/utwg-1-1-2026 }
     {+
-        <u>PURPOSE</u>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis 
-        ligula sed tortor lobortis, vel convallis mi scelerisque. Nullam malesuada 
-        maximus turpis, nec congue orci viverra euismod. Cras aliquam fermentum 
-        dui eu feugiat. Donec a metus tristique, suscipit orci ut, lacinia erat. 
-        In mi lorem, hendrerit ac elit quis, consequat ornare diam. Interdum et 
-        malesuada fames ac ante ipsum primis in faucibus. Proin tempus, metus vel 
-        dapibus sodales, massa sem ultricies leo, nec congue tellus magna ut 
-        ligula. Phasellus tellus velit, dictum a lacus vel, suscipit semper elit. 
-        Nulla facilisi.
+        {* [<&home>] | <b>Plans</b> | Activities | About | [<&moon>] | [<&person>] }
         .
-        <u>BACKGROUND</u>
-        Fusce nec elementum dui. Fusce et condimentum purus. Sed consectetur leo
-        at urna varius, nec facilisis nisl lacinia. Aliquam in faucibus ante,
-        pellentesque porta nunc. Pellentesque dolor ante, mattis vitae faucibus
-        vel, posuere dictum lacus. Quisque semper faucibus lorem, tempor commodo
-        dui euismod sed. Vivamus ac felis vel ipsum ullamcorper tincidunt.
+        { ^DRAFT^ {<b>OPLAN UTWG 1-1-2026: Desert Hawk XXIII</b>}}
         .
-        <u>DISCUSSION</u>
-        Aliquam dui nisl, rutrum vitae consectetur non, volutpat id nulla. Nulla
-        tincidunt sagittis nisi, in faucibus elit ultrices in. Interdum et
-        malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant 
-        morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-        Integer vehicula nunc ipsum, quis mollis nulla fermentum eu. Mauris eget
-        posuere ex, non viverra libero. Sed accumsan non turpis eu faucibus. Sed
-        luctus ante eget nisi porta, nec viverra ante ullamcorper.
-        .
-        <u>RECOMMENDATION</u>
-        Suspendisse potenti. Cras et sapien finibus, commodo massa quis, auctor
-        eros. Praesent nec efficitur urna, nec accumsan orci. Etiam at feugiat
-        velit, vel mattis nunc. Phasellus egestas condimentum volutpat. Morbi non
-        sodales nisi. Vestibulum elementum vehicula ante, et tempus turpis
-        tincidunt a.
+        {/ <b>eSSS</b> | Plan | CRM | Team }
+        {+
+            .
+            <b><u>Coordination</u></b>
+            .
+            {#
+                .           | TO          | ACTION  | OUTCOME          | DATE
+                <&elevator> | DHXXIII/SE  | Coord   | Concur w/Comment | 31 Jul 2025
+                <&elevator> | DHXXIII/CDS | Coord   | .                | .
+                <&elevator> | DHXXIII/CDC | Coord   | .                | .
+                <&elevator> | DHXXII/CC   | Sign    | .                | .
+                .           | UTWG/CP     | Approve | ^              ^ | .
+            }
+            [<&plus>]
+            .
+            <b><u>Action Officer:</u></b> Maj Severus Disfunctionus
+            .
+            <b><u>Suspense:</u></b> 31 Dec 2025
+            .
+            <b><u>Subject:</u></b> OPLAN for Desert Hawk XXIII
+            .
+            <b><u>Summary</u></b>
+            .
+            {+
+                1. PURPOSE.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                facilisis ligula sed tortor lobortis, vel convallis mi scelerisque. Nullam 
+                malesuada maximus turpis, nec congue orci viverra euismod. Cras aliquam
+                fermentum dui eu feugiat. Donec a metus tristique, suscipit orci ut, lacinia
+                erat. In mi lorem, hendrerit ac elit quis, consequat ornare diam. Interdum 
+                et malesuada fames ac ante ipsum primis in faucibus. Proin tempus, metus vel 
+                dapibus sodales, massa sem ultricies leo, nec congue tellus magna ut 
+                ligula. Phasellus tellus velit, dictum a lacus vel, suscipit semper elit. 
+                Nulla facilisi.
+                .
+                2. BACKGROUND.  Fusce nec elementum dui. Fusce et condimentum purus. Sed 
+                consectetur leo at urna varius, nec facilisis nisl lacinia. Aliquam in 
+                faucibus ante, pellentesque porta nunc. Pellentesque dolor ante, mattis 
+                vitae faucibus vel, posuere dictum lacus. Quisque semper faucibus lorem,
+                tempor commodo dui euismod sed. Vivamus ac felis vel ipsum ullamcorper 
+                tincidunt.
+                .
+                3. DISCUSSION.  Aliquam dui nisl, rutrum vitae consectetur non, volutpat
+                id nulla. Nulla tincidunt sagittis nisi, in faucibus elit ultrices in. 
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+                habitant morbi tristique senectus et netus et malesuada fames ac turpis 
+                egestas. Integer vehicula nunc ipsum, quis mollis nulla fermentum eu. Mauris 
+                eget posuere ex, non viverra libero. Sed accumsan non turpis eu faucibus. 
+                Sed luctus ante eget nisi porta, nec viverra ante ullamcorper.
+                .
+                4. VIEWS OF OTHERS.  Suspendisse potenti. Cras et sapien finibus, commodo 
+                massa quis, auctor eros. Praesent nec efficitur urna, nec accumsan orci. 
+                Etiam at feugiat velit, vel mattis nunc. Phasellus egestas condimentum 
+                volutpat. Morbi non sodales nisi. Vestibulum elementum vehicula ante, et 
+                tempus turpis tincidunt a.
+                .
+                5. OPTIONS.  Vestibulum interdum nisl in lacinia tempor. Cras in
+                condimentum dolor, a varius leo. Quisque dignissim efficitur ante, 
+                facilisis vestibulum nunc porta a. Suspendisse porta, est vitae convallis
+                elementum, eros justo aliquet ex, eget aliquet turpis lectus sed dui.
+                Suspendisse egestas tellus eu dignissim rhoncus. Cras viverra dui justo,
+                vel posuere sem vulputate nec. Nunc vitae tortor magna. Nunc vulputate vitae 
+                orci nec efficitur. Aliquam ac nulla et risus pharetra ornare ut vitae nibh.
+                Nullam volutpat ullamcorper tellus, eu tempor enim lobortis sit amet. Phasellus
+                sodales cursus fermentum. Integer facilisis tempor faucibus. Morbi sagittis nibh 
+                sed vulputate pharetra. Nulla sit amet libero nibh.
+                .
+                6. RECOMMENDATION.  Vestibulum dapibus feugiat sapien eu luctus. Mauris
+                congue sodales sapien ut efficitur. Cras luctus ex id diam molestie, a hendrerit
+                velit condimentum. Aliquam at posuere ipsum, in facilisis massa. Phasellus 
+                ac justo elit. Aliquam sit amet erat nec dui maximus venenatis vel eget quam.
+                In ac sodales massa. Maecenas congue cursus elit vitae bibendum. Etiam lacinia
+                fringilla nisl eu consectetur. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae.
+            }
+        }
     }
-
-
-}
-}
 }
 @endsalt
