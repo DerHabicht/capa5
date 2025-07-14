@@ -1,0 +1,24 @@
+@startsalt Plan: eSSS Tab
+{ 
+    {+ https://capa5.ag7if.net/plans/utwg-1-1-2026 }
+    {+
+        {* [<&home>] | <b>Plans</b> | Activities | About | [<&moon>] | [<&person>] }
+        .
+        { ^DRAFT^ {<b>OPLAN UTWG 1-1-2026: Desert Hawk XXIII</b>}}
+        .
+        {/ eSSS | Plan | CRM | <b>Team</b> }
+        {+
+            .
+            <b><u>Planning Team</u></b>
+            .
+            {#
+                Role       | Name                      | Assignment           | Office Symbol
+                Owner      | Maj Severus Disfunctionus | Encampment Commander | DHXXIII/CC
+                ^ Editor ^ | Capt I. M. Safe           | Safety Officer       | DHXXIII/SE
+                [Invite]   | Maj Biggius Egolius       | UTWG DCP             | UTWG/CP
+
+            }
+        }
+    }
+}
+@endsalt
