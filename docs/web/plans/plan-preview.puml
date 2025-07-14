@@ -3,11 +3,9 @@
 {+ https://capa5.ag7if.net/plans/utwg-1-1-2026 }
 {+
 {* [<&home>] | <b>Plans</b> | Activities | About | [<&moon>] | [<&person>] }
-
+^DRAFT^
 {/ eSSS | <b>Plan</b> | CRM }
 {+
-    ^DRAFT^^ Revision 2^^ Revision 1^ 
-
     {T
     + 1: Situation
     + 2: Mission
@@ -43,7 +41,7 @@
         .
     }
 
-    {[<&chevron-left>] | [<&chevron-right>]} | [Edit] | [New Task]
+    {[<&chevron-left>] | [<&chevron-right>]} | [Edit] | {[Show All] | [New Task]}
 }
 
 }
