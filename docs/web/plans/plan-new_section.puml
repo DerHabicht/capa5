@@ -1,0 +1,14 @@
+@startsalt New Section Dialog
+{
+    {+
+        [<&x>] | <b>New Section</b> | .
+        Parent: { ^3: Execution^ } | .
+        {Title:}  {+ "Phase 3     "} | .
+        Tasks:  {+ "Draft Phase 3"} {+ ^Maj Disfunctionus^ }
+        .       {+ "             "} {+ ^                 ^ }
+        .       | {[<&plus>] | [<&minus>]}
+        [Create]
+
+    }
+}
+@endsalt

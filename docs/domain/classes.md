@@ -216,7 +216,7 @@ classDiagram
     }
 ```
 
-## Unit Module
+## User Module
 
 Age Brackets:
 
@@ -228,6 +228,10 @@ Age Brackets:
 
 ```mermaid
 classDiagram
+    Member *-- AB
+    DutyAssignment -- Unit
+    DutyAssignment -- Member
+
     class AB {
         Adult
         EarlyAdult
@@ -257,9 +261,18 @@ classDiagram
         -id: uuid.UUID
         cap.Unit
     }
+
+    class User {
+        -id: uuid.UUID
+        -username: string
+        -email: string
+        -member: Member
+    }
+
+    class UserRole {
+        -unit_id: uuid.UUId
+        
+    }
 ```
-
-
-## User Module
 
 # Entity Relationship Diagrams
