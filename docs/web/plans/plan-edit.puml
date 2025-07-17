@@ -1,4 +1,4 @@
-@startsalt Plan: Plan Tab (Preview)
+@startsalt Plan: Plan Tab (Edit)
 { 
     {+ https://capa5.ag7if.net/plans/utwg-1-1-2026 }
     {+
@@ -20,10 +20,6 @@
                 + 5: Command and Control
                 + A: Task Organization
             } | {SI
-                <b>3: Execution</b>
-                .
-                <b>3.1: Concept of Operations</b>
-                .
                 <b>3.1.1: Command Intent</b>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Nam dolor sapien, porttitor sed faucibus non, posuere id 
@@ -48,7 +44,7 @@
                 [New Comment]
             }
 
-            {[<&chevron-left>] | [<&chevron-right>] | [<&plus>] | [<&minus>] | [<&elevator>] } | [Edit] | .
+            {[<&chevron-left>] | [<&chevron-right>] | [<&plus>] | [<&minus>] | [<&elevator>] } | [Save] | .
         }
     }
 }

@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/test-utils',
     '@primevue/nuxt-module',
+    '@pinia/nuxt'
   ],
   primevue: {
     options: {
