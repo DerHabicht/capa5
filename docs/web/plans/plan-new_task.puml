@@ -1,0 +1,14 @@
+@startsalt New Task Dialog
+{
+    {+
+    
+        [<&x>]     | <b>New Task</b>
+        Tab:       | { ^3: Execution^ }
+        Task:      | {+ "Phase 3     "}
+        Assigned:  | {+ ^Maj Disfunctionus^ }
+        Suspense:  | {+ "                  "}
+        [Create] | .
+
+    }
+}
+@endsalt

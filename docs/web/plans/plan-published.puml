@@ -4,7 +4,7 @@
     {+
         {* [<&home>] | <b>Plans</b> | Activities | About | [<&moon>] | [<&person>] }
         .
-        { ^DRAFT^ {<b>OPLAN UTWG 1-1-2026: Desert Hawk XXIII</b>}}
+        { ^Revision 2^ {<b>OPLAN UTWG 1-1-2026: Desert Hawk XXIII</b>}}
         .
         {/ eSSS | <b>Plan</b> | CRM | Team }
         {+
@@ -34,21 +34,9 @@
                 sollicitudin enim id convallis blandit. Donec arcu eros, 
                 accumsan at rutrum id, commodo eget eros. Maecenas egestas 
                 urna eget massa suscipit congue.
-            } | {
-                {#
-                    <b>Tasks</b> | * | *
-                    Finalize Command Intent | 5 Aug 2025 | [Complete]
-                    Generate more busywork  | 1 Aug 2025 | [Complete]
-                }
-                [New Task]
-                {#
-                    <b>Comments</b> | * | *
-                    S | Instructions unclear, sewed name tapes to blues | [Resolve]
-                }
-                [New Comment]
             }
-
-            {[<&chevron-left>] | [<&chevron-right>] | [<&plus>] | [<&minus>] | [<&elevator>] | [Edit] } | *
+            
+            {[<&chevron-left>] | [<&chevron-right>] | [<&plus>] | [<&minus>] | [<&elevator>] } | [Download PDF] | .
         }
     }
 }

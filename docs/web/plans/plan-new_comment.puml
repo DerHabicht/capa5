@@ -1,0 +1,19 @@
+@startsalt New Comment Dialog
+{
+    {+
+    
+        [<&x>]     | <b>New Comment</b>
+        To:        | { ^All^ }
+        Type:      | { ^Critical^ }
+        Tab:       | { ^3: Execution^ }
+        Location:  | {+ "            "}
+        Comment:   | {+ 
+                        .
+                        .
+                        .
+                        "                  "
+                     }
+        [Create] | .
+    }
+}
+@endsalt
