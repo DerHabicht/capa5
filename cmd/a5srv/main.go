@@ -21,12 +21,18 @@ var GitRevision string
 var GitBranch string
 
 func main() {
-	version := fmt.Sprintf(
-		"%s+%s.%s.%s",
-		BaseVersion,
-		GitBranch,
-		GitRevision,
-		BuildTime,
-	)
+	var version string
+	// This happens if the Makefile isn't used to build the server, e.g. a run configuration in the IDE.
+	if BuildTime == "" || GitRevision == "" || GitBranch == "" {
+		version = BaseVersion
+	} else {
+		version = fmt.Sprintf(
+			"%s+%s.%s.%s",
+			BaseVersion,
+			GitBranch,
+			GitRevision,
+			BuildTime,
+		)
+	}
 	a5srv.Execute(version)
 }
