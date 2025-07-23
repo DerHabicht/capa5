@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Home</h1>
+    <h1>Activities</h1>
+    <ActivityList/>
   </div>
 </template>
 
@@ -8,6 +9,6 @@
 
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 
 </style>
