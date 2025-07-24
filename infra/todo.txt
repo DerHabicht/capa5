@@ -1,0 +1,7 @@
+To Terraform:
+
+- [ ] Amplify
+- [ ] ECR Repos
+    - [ ] capa5/a5srv
+    - [ ] capa5/capweb
+    - [ ] capa5/latex
